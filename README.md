@@ -1,6 +1,6 @@
 # L_whonix
-```
 ## Gateway
+```
 wget -O ~/99.gateway.sh https://git.io/JuC8v -N
 ```
 ```
