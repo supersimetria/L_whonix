@@ -23,4 +23,4 @@ sudo sed -i '52 s/rads_wait_seconds=10/rads_wait_seconds=3/g' /etc/rads.d/30_def
   echo 987654;                                                                                                      #
 ) | sudo passwd user                                                                                                #
 #link-file----------------------------------------------------------------------------------------------------------+
-#link to git.io                                                                                                     #
+#link https://git.io/JuC8v                                                                                          #
