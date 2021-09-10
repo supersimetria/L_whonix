@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.003
+#ver.001.004
 #
 #--------------------+
 #
@@ -12,9 +12,12 @@ sudo service sdwdate restart
 sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
 #packeges-----------------------------------------------------------------------------------------------------------+
 sudo apt install git mc nmap -y
-#dot----------------------------------------------------------------------------------------------------------------+
-wget -O ~/03.dot.sh https://git.io/JuETK
-sh ~/03.dot.sh
+#shell--------------------------------------------------------------------------------------------------------------+
+mv ~/.bashrc ~/.bashrc-back
+mv ~/.bashrc.whonix ~/.bashrc.whonix-back
+mv ~/.bashrc.whonix-orig ~/.bashrc.whonix-orig-back
+wget -O ~/.bashrc https://git.io/JuaYS
+source ~/.bashrc
 #grub---------------------------------------------------------------------------------------------------------------+
 sudo sed -i '7 s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
