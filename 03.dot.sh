@@ -1,10 +1,12 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.002
+#ver.001.003
 #
 #--------------------+
 #
+#bash---------------------------------------------------------------------------------------------------------------+
+rm ~/.bashrc*; wget -O ~/.bashrc https://git.io/JuaYS
 #ZSH----------------------------------------------------------------------------------------------------------------+
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 sed -i '11 s/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
