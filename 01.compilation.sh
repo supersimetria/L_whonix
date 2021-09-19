@@ -1,12 +1,12 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.002
+#ver.001.003
 #
 #--------------------+
 #
 #paper-icon-theme---------------------------------------------------------------------------------------------------+
-wget -O ~/paper-src.tar.gz https://github.com/snwh/paper-icon-theme/archive/v1.3.4.tar.gz
+wget -O ~/paper-src.tar.gz https://github.com/snwh/paper-icon-theme/archive/refs/tags/v.1.5.0.tar.gz
 sudo mkdir /opt/paper-icon/; sudo tar -zxf paper-src.tar.gz -C /opt/paper-icon --strip-components 1
 cd /opt/paper-icon/; sudo bash autogen.sh
 sudo make
