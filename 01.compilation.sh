@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.005
+#ver.001.006
 #
 #--------------------+
 #
@@ -20,7 +20,6 @@ cd fonts; ./install.sh; cd ..; rm -rf fonts
 #chicago95----------------------------------------------------------------------------------------------------------+
 cd; git clone https://github.com/grassmunk/Chicago95.git
 sudo cp -r Chicago95/Theme/Chicago95 /usr/share/themes/
-sudo rm -r Chicago95/
 sudo cp -r Chicago95/Icons/* /usr/share/icons/
 cp -r Chicago95/Extras/override/gtk-3.22/ /home/$USER/.config/gtk-3.0/
 sudo sed -i 's/export XDG_DATA_DIRS/export QT_QPA_PLATFORMTHEME=qt5ct/' /etc/X11/Xsession.d/55xfce4-session
@@ -29,7 +28,9 @@ fc-cache -f -v
 mkdir -p ~/.local/share/xfce4/terminal/colorschemes
 sudo cp ~/Chicago95/Extras/Chicago95.theme ~/.local/share/xfce4/terminal/colorschemes
 sudo cp ~/Chicago95/Extras/Chicago95.zsh-theme ~/.oh-my-zsh/themes/
-sudo cat ~/Chicago95/Extras/ZSHDOSrc >> ~/.zshrc#infinalit----------------------------------------------------------------------------------------------------------+
+sudo cat ~/Chicago95/Extras/ZSHDOSrc >> ~/.zshrc
+sudo rm -r Chicago95/
+#infinalit----------------------------------------------------------------------------------------------------------+
 wget -O ~/infinality.deb https://launchpad.net/~no1wantdthisname/+archive/ubuntu/ppa/+files/fontconfig-infinality_20130104-0ubuntu0ppa1_all.deb
 sudo dpkg -i ~/infinality.deb; rm ~/infinality.deb
 (
