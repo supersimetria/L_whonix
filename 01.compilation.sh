@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.008
+#ver.001.009
 #
 #--------------------+
 #
@@ -12,7 +12,9 @@ meson "build" --prefix=/usr
 sudo ninja -C "build" install
 cd ..; sudo rm -r paper-icon-theme
 #ZSH----------------------------------------------------------------------------------------------------------------+
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+(
+ echo n;
+) | sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 sed -i '11 s/ZSH_THEME="robbyrussell"/ZSH_THEME="Chicago95"/g' ~/.zshrc
 sed -i '73 s/plugins=(git)/plugins=(npm git npm osx rake sudo dotenv vagrant bundler composer web-search)/g' ~/.zshrc
 git clone https://github.com/powerline/fonts.git
@@ -61,10 +63,8 @@ sudo mkdir -p /usr/share/fonts/truetype/ms_sans_serif
 mkdir -p ~/.config/fontconfig/conf.d/
 wget https://github.com/cmcmahan/Xplanet/raw/master/fonts/micross.ttf
 wget -O ~/MSSansSerif.ttf https://andryushkin.ru/wp-content/fonts/MicrosoftSansSerifRegular/MicrosoftSansSerifRegular.ttf -N
-sudo cp micross.ttf MSSansSerif.ttf /usr/share/fonts/truetype/ms_sans_serif/
+sudo mv micross.ttf MSSansSerif.ttf /usr/share/fonts/truetype/ms_sans_serif/
 cd ~/Chicago95/Extras/; sudo cp 99-ms-sans-serif.conf 99-ms-sans-serif-bold.conf /usr/share/fonts/truetype/ms_sans_serif
-sudo fc-cache -f -vsudo poweroff
-
 
 #    Enabling the font:---------------------------------------------------------------------------------------------+
 #      Open the XFCE settings manager > Appearance > Fonts tab.
@@ -74,14 +74,14 @@ sudo fc-cache -f -vsudo poweroff
 #      For XFCE 4.12 users, you can set the font for the Orage panel clock by right-clicking the panel clock, selecting Properties, then next to Line 1, change the font to Microsoft Sans Serif, style Regular, size 8. Inside the Line 1 box, add two spaces before and after the value in the box, to apply some spacing.
 
 #[Баш терминал шрифтов]:--------------------------------------------------------------------------------------------+
-cd..; mkdir -p ~/.fonts/truetype
+cd ..; mkdir -p ~/.fonts/truetype
 cp -r Fonts/vga_font/ ~/.fonts/truetype/
 fc-cache -f -v
 
   #включить шрифт]:-------------------------------------------------------------------------------------------------+
-In xfce4-term go to the Edit->Preferences and click on the Appearance tab and select the font Less Perfect DOS VGA or More Pefect DOS VGA, size 12. For better readability, uncheck "Allow bold text".
-
-If desired, you can use an MS-DOS style cursor by going to the General tab, setting "Cursor shape" to "Underline" and checking the box for "Cursor blinks".
+#In xfce4-term go to the Edit->Preferences and click on the Appearance tab and select the font Less Perfect DOS VGA or More Pefect DOS VGA, size 12. For better readability, uncheck "Allow bold text".
+#
+#If desired, you can use an MS-DOS style cursor by going to the General tab, setting "Cursor shape" to "Underline" and checking the box for "Cursor blinks".
 
 #[Темы терминала]]:-------------------------------------------------------------------------------------------------+
   #bash=====
@@ -99,6 +99,7 @@ If desired, you can use an MS-DOS style cursor by going to the General tab, sett
 
 #sound--------------------------------------------------------------------------------------------------------------+
 sudo cp -r sounds/Chicago95/ /usr/share/sounds/
+cd; sudo rm -r Chicago95/
 #infinalit----------------------------------------------------------------------------------------------------------+
 wget -O ~/infinality.deb https://launchpad.net/~no1wantdthisname/+archive/ubuntu/ppa/+files/fontconfig-infinality_20130104-0ubuntu0ppa1_all.deb
 sudo dpkg -i ~/infinality.deb; rm ~/infinality.deb
