@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.008
+#ver.001.009
 #
 #--------------------+
 #
@@ -10,7 +10,10 @@ whonixcheck
 #update-------------------------------------------------------------------------------------------------------------+
 sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
 #packeges-----------------------------------------------------------------------------------------------------------+
-sudo apt install autoconf automake bleachbit build-essential build-essential catfish dconf-cli dh-autoreconf engrampa etherape flameshot fontforge fonts-droid-fallback fonts-hack-ttf git glib-2.0-dev gnome-session-canberra gobject-introspection htop htop intltool libcanberra-gtk-module libcanberra-gtk0 libcanberra-gtk3-module libgtk2.0-dev libreoffice libreoffice-l10n-en-gb libxfce4ui-1-dev make mc meson nmap nmap npm onionshare openssh-client openssh-client openssl openssl openvpn openvpn pidgin pidgin-otr pkg-config psi-plus psi-plus python-exconsole qt5-style-plugins qt5ct qtox rdesktop sakura telegram-desktop terminator thunderbird tilix xfce4-goodies zsh-autosuggestions zsh-syntax-highlighting -y
+sudo apt install autoconf automake baobab bleachbit build-essential build-essential catfish dconf-cli dh-autoreconf engrampa etherape flameshot fontforge fonts-droid-fallback fonts-hack-ttf git glib-2.0-dev gnome-session-canberra gobject-introspection htop htop intltool libcanberra-gtk-module libcanberra-gtk0 libcanberra-gtk3-module libgtk2.0-dev libreoffice libreoffice-l10n-en-gb libxfce4ui-1-dev lightdm-gtk-greeter-settings make mc meson nmap nmap npm onionshare openssh-client openssh-client openssl openssl openvpn openvpn pidgin pidgin-otr pkg-config psi-plus psi-plus python-exconsole qt5-style-plugins qt5ct qtox rdesktop sakura telegram-desktop terminator thunar-gtkhash thunderbird tilix whonix-xfce-desktop-config xfce4-goodies xfce4-notifyd zsh-autosuggestions zsh-syntax-highlighting -y
+#remove-------------------------------------------------------------------------------------------------------------+
+sudo apt remove lightdm-autologin-greeter
+sudo apt remove --auto-remove
 #update-torbrowser--------------------------------------------------------------------------------------------------+
 update-torbrowser --ordinary --noask
 #grub---------------------------------------------------------------------------------------------------------------+
