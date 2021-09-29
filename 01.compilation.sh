@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.009
+#ver.001.010
 #
 #--------------------+
 #
@@ -99,6 +99,7 @@ fc-cache -f -v
 
 #sound--------------------------------------------------------------------------------------------------------------+
 sudo cp -r sounds/Chicago95/ /usr/share/sounds/
+xfconf-query -c xsettings -p /Net/SoundThemeName -s Chicago95
 cd; sudo rm -r Chicago95/
 #infinalit----------------------------------------------------------------------------------------------------------+
 wget -O ~/infinality.deb https://launchpad.net/~no1wantdthisname/+archive/ubuntu/ppa/+files/fontconfig-infinality_20130104-0ubuntu0ppa1_all.deb
