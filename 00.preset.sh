@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.010
+#ver.001.011
 #
 #--------------------+
 #
@@ -25,9 +25,9 @@ sudo cp /etc/rads.d/30_default.conf /etc/rads.d/30_default.conf.bak
 sudo sed -i '52 s/rads_wait_seconds=10/rads_wait_seconds=3/g' /etc/rads.d/30_default.conf
 #git-vol------------------------------------------------------------------------------------------------------------+
 cd ~/; git clone https://github.com/supersimetria/L_whonix.git
-sh ~/L_whonix/01.compilation.sh
-sh ~/L_whonix/02.useradd.sh
-sh ~/L_whonix/03.dot.sh
+#sh ~/L_whonix/01.compilation.sh
+#sh ~/L_whonix/02.useradd.sh
+#sh ~/L_whonix/03.dot.sh
 #sudo rm -r L_whonix
 #link-file----------------------------------------------------------------------------------------------------------+
 #link https://git.io/JuC8u
