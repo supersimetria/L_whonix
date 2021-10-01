@@ -8,8 +8,5 @@ sh ~/99.gateway.sh
 ```
 ## Work_station
 ```
-wget -O ~/00.preset.sh https://git.io/JuC8u -N
-```
-```
-sh ~/00.preset.sh
+curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/00.preset.sh > 00.preset.sh; sh 00.preset.sh
 ```
