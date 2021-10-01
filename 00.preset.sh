@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.014
+#ver.001.015
 #
 #--------------------+
 #
@@ -11,7 +11,7 @@ sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
 sudo -u sdwdate touch /run/sdwdate/first_success
 whonixcheck
 #packeges-----------------------------------------------------------------------------------------------------------+
-sudo apt install $(cat ~/L_whonix/mod/01.1.pl-0) -y
+sudo apt install $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/mod/01.1.pl-0) -y
 #remove-------------------------------------------------------------------------------------------------------------+
 sudo apt remove lightdm-autologin-greeter
 sudo apt remove --auto-remove
