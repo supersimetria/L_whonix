@@ -1,12 +1,12 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.005
+#ver.001.006
 #
 #--------------------+
 #
 #bash---------------------------------------------------------------------------------------------------------------+
-rm ~/.bashrc*; wget -O ~/.bashrc https://git.io/JuaYS
+#rm ~/.bashrc*; wget -O ~/.bashrc https://git.io/JuaYS
 #oh-my-zsh----------------------------------------------------------------------------------------------------------+
 (
  echo n;
@@ -17,7 +17,7 @@ git clone https://github.com/powerline/fonts.git
 cd fonts; ./install.sh; cd ..; rm -rf fonts
 #xfconf-------------------------------------------------------------------------------------------------------------+
 killall xfconfd
-cp ~/L_whonix/mod/01.xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+cp ~/L_whonix/mod/02.xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 xfce4-panel -r
 #link-file----------------------------------------------------------------------------------------------------------+
 #link https://git.io/JuETK
