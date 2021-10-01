@@ -5,6 +5,7 @@ bleachbit
 build-essential
 build-essential
 catfish
+clang
 dconf-cli
 dh-autoreconf
 engrampa
