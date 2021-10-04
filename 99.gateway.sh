@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.006
+#ver.001.007
 #
 #--------------------+
 #
@@ -9,7 +9,7 @@
 sudo -u sdwdate touch /run/sdwdate/first_success
 systemcheck
 #update-------------------------------------------------------------------------------------------------------------+
-sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
+sudo apt-get update; sudo apt-get dist-upgrade -y
 #packeges-----------------------------------------------------------------------------------------------------------+
 sudo apt install git mc nmap -y
 #shell--------------------------------------------------------------------------------------------------------------+
