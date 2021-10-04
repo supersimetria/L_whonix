@@ -2,7 +2,7 @@
 ## Gateway
 ```
 curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/99.gateway.sh > 99.gateway.sh; sh 99.gateway.sh
-./ $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/setup)
+bash $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/setup)
 ```
 ## Work_station
 ```

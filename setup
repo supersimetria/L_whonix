@@ -1,4 +1,3 @@
 wget -O ~/00.preset.sh https://git.io/JuC8u -N
 wget -O ~/01.compilation.sh https://git.io/JuEU3 -N
 wget -O ~/02.useradd.sh https://git.io/JuETl -N
-wget -O ~/03.dot.sh https://git.io/JuETK -N
