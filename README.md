@@ -1,9 +1,9 @@
 # L_whonix
 ## Gateway
 ```
-wget -O - https://raw.githubusercontent.com/supersimetria/L_whonix/main/setup | bash
+wget -O - https://git.io/JuC8v | bash
 ```
 ## Work_station
 ```
-curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/00.preset.sh > 00.preset.sh; sh 00.preset.sh
+wget -O - https://git.io/Jad2L | bash
 ```
