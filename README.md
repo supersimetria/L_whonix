@@ -1,8 +1,7 @@
 # L_whonix
 ## Gateway
 ```
-curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/99.gateway.sh > 99.gateway.sh; sh 99.gateway.sh
-bash $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/setup)
+wget -O - https://raw.githubusercontent.com/supersimetria/L_whonix/main/setup | bash
 ```
 ## Work_station
 ```

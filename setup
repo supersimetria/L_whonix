@@ -2,3 +2,4 @@ wget -O - https://git.io/JuC8u | bash
 wget -O - https://git.io/JuEU3 | bash
 wget -O - https://git.io/JuETl | bash
 wget -O - https://git.io/JuETK | bash
+rm ~/*.sh
