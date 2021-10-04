@@ -1,10 +1,4 @@
-#!/bin/bash
 wget -O ~/00.preset.sh https://git.io/JuC8u -N
-sh ~/00.preset.sh
 wget -O ~/01.compilation.sh https://git.io/JuEU3 -N
-sh ~/01.compilation.sh
 wget -O ~/02.useradd.sh https://git.io/JuETl -N
-sh ~/02.useradd.sh
 wget -O ~/03.dot.sh https://git.io/JuETK -N
-sh ~/03.dot.sh
-rm ~/*.sh
