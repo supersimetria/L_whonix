@@ -1,3 +1,4 @@
+#!/bin/bash
 wget -O ~/00.preset.sh https://git.io/JuC8u -N
 sh ~/00.preset.sh
 wget -O ~/01.compilation.sh https://git.io/JuEU3 -N
