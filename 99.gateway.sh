@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.004
+#ver.001.005
 #
 #--------------------+
 #
@@ -13,11 +13,19 @@ sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
 #packeges-----------------------------------------------------------------------------------------------------------+
 sudo apt install git mc nmap -y
 #shell--------------------------------------------------------------------------------------------------------------+
-mv ~/.bashrc ~/.bashrc-back
-mv ~/.bashrc.whonix ~/.bashrc.whonix-back
-mv ~/.bashrc.whonix-orig ~/.bashrc.whonix-orig-back
-wget -O ~/.bashrc https://git.io/JuaYS
+cd; git clone https://github.com/grassmunk/Chicago95.git
+#font-----
+mkdir -p ~/.fonts/truetype
+cp -r ~/Chicago95/Fonts/vga_font/ ~/.fonts/truetype/
+fc-cache -f -v
+#bash-----
+mkdir -p ~/.local/share/xfce4/terminal/colorschemes
+cp ~/Chicago95/Extras/Chicago95.theme ~/.local/share/xfce4/terminal/colorschemes/
+sed -i '22 s/echo "Microsoft(R) Windows 95"/echo "FF0000.Line(R) Lunar"/g' ~/Chicago95/Extras/DOSrc
+sed -i '23 s/echo "   (C)Copyright Microsoft Corp 1981-1996."/echo "   (C)Copyright FF0000.Line Inc 1999-2077."/g' ~/Chicago95/Extras/DOSrc
+cat ~/Chicago95/Extras/DOSrc >> ~/.bashrc
 source ~/.bashrc
+sudo rm -r Chicago95/
 #grub---------------------------------------------------------------------------------------------------------------+
 sudo sed -i '7 s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
