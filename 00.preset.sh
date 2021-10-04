@@ -1,12 +1,12 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.016
+#ver.001.017
 #
 #--------------------+
 #
 #update-------------------------------------------------------------------------------------------------------------+
-sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
+sudo apt-get update; sudo apt-get dist-upgrade -y
 #check--------------------------------------------------------------------------------------------------------------+
 sudo -u sdwdate touch /run/sdwdate/first_success
 whonixcheck
