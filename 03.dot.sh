@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.006
+#ver.001.007
 #
 #--------------------+
 #
@@ -16,8 +16,8 @@ sed -i '73 s/plugins=(git)/plugins=(npm git npm osx rake sudo dotenv vagrant bun
 git clone https://github.com/powerline/fonts.git
 cd fonts; ./install.sh; cd ..; rm -rf fonts
 #xfconf-------------------------------------------------------------------------------------------------------------+
-killall xfconfd
-cp ~/L_whonix/mod/02.xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-xfce4-panel -r
+#killall xfconfd
+#cp ~/L_whonix/mod/02.xfce-perchannel-xml/* ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+#xfce4-panel -r
 #link-file----------------------------------------------------------------------------------------------------------+
 #link https://git.io/JuETK
