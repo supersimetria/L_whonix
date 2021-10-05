@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.012
+#ver.001.013
 #
 #--------------------+
 #
@@ -42,7 +42,6 @@ fc-cache -f -v
   sed -i '22 s/echo "Microsoft(R) Windows 95"/echo "FF0000.Line(R) Lunar"/g' ~/Chicago95/Extras/DOSrc
   sed -i '23 s/echo "   (C)Copyright Microsoft Corp 1981-1996."/echo "   (C)Copyright FF0000.Line Inc 1999-2077."/g' ~/Chicago95/Extras/DOSrc
   cat Extras/DOSrc >> ~/.bashrc
-
   #oh-my-zsh MS-DOS theme-----
   cp Extras/Chicago95.zsh-theme ~/.oh-my-zsh/themes/
   sed -i '3 s/echo "Microsoft(R) Windows 95"/echo "FF0000.Line(R) Lunar"/g' ~/Chicago95/Extras/ZSHDOSrc
