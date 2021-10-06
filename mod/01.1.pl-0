@@ -13,12 +13,14 @@ flameshot
 fontforge
 fonts-droid-fallback
 fonts-hack-ttf
+fslint
 git
 glib-2.0-dev
 gnome-session-canberra
 gobject-introspection
 htop
 intltool
+kate
 libcanberra-gtk-module
 libcanberra-gtk0
 libcanberra-gtk3-module
