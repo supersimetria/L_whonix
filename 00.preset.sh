@@ -1,14 +1,13 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.017
+#ver.001.018
 #
 #--------------------+
 #
 #update-------------------------------------------------------------------------------------------------------------+
 sudo apt-get update; sudo apt-get dist-upgrade -y
 #check--------------------------------------------------------------------------------------------------------------+
-sudo -u sdwdate touch /run/sdwdate/first_success
 whonixcheck
 #packeges-----------------------------------------------------------------------------------------------------------+
 sudo apt install $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/mod/01.1.pl-0) -y
