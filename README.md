@@ -1,4 +1,8 @@
 # L_whonix
+# Get
+```
+git clone https://github.com/supersimetria/L_whonix.git
+```
 ## Gateway
 ```
 wget -O - https://git.io/JuC8v | bash
