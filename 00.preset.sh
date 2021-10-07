@@ -1,7 +1,7 @@
 #!/bin/bash
 #titul---------------+
 #
-#ver.001.018
+#ver.001.019
 #
 #--------------------+
 #
@@ -10,7 +10,7 @@ sudo apt-get update; sudo apt-get dist-upgrade -y
 #check--------------------------------------------------------------------------------------------------------------+
 whonixcheck
 #packeges-----------------------------------------------------------------------------------------------------------+
-sudo apt install $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/mod/01.1.pl-0) -y
+sudo apt install $(curl https://raw.githubusercontent.com/supersimetria/L_whonix/main/mod/pl-0) -y
 #update-torbrowser--------------------------------------------------------------------------------------------------+
 update-torbrowser --ordinary --noask
 #grub---------------------------------------------------------------------------------------------------------------+
